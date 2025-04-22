@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercise</title>
+</head>
+<body>
+    <a href="../index.html">Back to Playground</a>
+
+    <br><br>
+
+    <h1>Form Exercise: Apply for this job!</h1>
+    <p>Fill in hte form below to apply to the awesome job offer we have for you...</p>
+    <br>
+
+    <form action="post">
+        <!-- First & Last Name -->
+        <label for="first-name">First Name*: </label>
+        <input type="text" name="first-name" id="first-name" placeholder="George" required>
+        <br><br>
+        <label for="last-name">Last Name*: </label>
+        <input type="text" name="last-name" id="last-name" placeholder="Cloney" required>
+        <br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone*: </label>
+        <input type="tel" name="phone" id="phone" placeholder="+351 999 999 999" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="mail">Email*: </label>
+        <input type="email" name="mail" id="mail" placeholder="name@examplel.com" required>
+        <br><br>
+
+        <!-- Website -->
+        <label for="site">Website/Portfolio (Optional): </label>
+        <input type="url" name="site" id="site" placeholder="https://your-site.com">
+        <br><br>
+
+        <!-- CV -->
+        <label for="cv">Upload you CV*: </label>
+        <input type="file" name="cv" id="cv" required>
+        <br><br>
+        <hr>
+
+        <!-- Work Experience Section -->
+        <h2>Experience</h2>
+        <label for="last-company">Previous Experience*: </label>\
+        <input type="text" name="last-company" id="last-company" required>
+        <br><br>
+        <label for="start-date">Start Date: </label>
+        <input type="date" name="start-date" id="start-date" required>
+        <br><br>
+        <label for="end-date">End Date (optional): </label>
+        <input type="date" name="end-date" id="end-date">
+        <br><br>
+        <label for="current-work">I still work here </label>
+        <input type="checkbox" name="current-work" id="current-work">
+        <br><br>
+
+        <hr>
+        <br>
+
+        <!-- Leave notice -->
+        <label for="leave-notice">What's your leave notice period? </label>
+        <input type="number" name="leave-notice" id="leave-notice" min="0" placeholder="31"> <label for="leave-notice">Days</label>
+        <br><br><br>
+
+        <!-- Cover Letter -->
+        <label for="cover-letter">Write a cover letter (optional): </label>
+        <br><br>
+        <textarea name="cover-letter" id="cover-letter" placeholder="Add your cover letter here..." ></textarea>
+        <br><br>
+
+        <!-- Where did you knew about this job? -->
+        <label for="job-source">Where did you knew about this job?* </label>
+        <br><br>
+        <select name="job-source" id="job-source" required>
+            <option value="">Select an option...</option>
+            <option value="google">Google</option>
+            <option value="linkedin">Linkedin</option>
+            <option value="friends">Friends</option>
+            <option value="other">Other</option>
+        </select>
+
+
+    </form>
+
+</body>
+</html>
